@@ -7,4 +7,4 @@ https://gulogulo.movie.nomoredomains.sbs
 
 ### Технологии
 
-Ой, это отдельная история))) позже расскажу)))
+React
