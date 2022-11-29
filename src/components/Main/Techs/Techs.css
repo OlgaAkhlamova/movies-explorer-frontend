@@ -11,6 +11,7 @@
   border-bottom: 1px solid black;
   margin: 0;
   padding-bottom: 23px;
+  text-align: start;
 }
 
 .techs__container {

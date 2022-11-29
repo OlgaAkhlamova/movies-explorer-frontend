@@ -11,8 +11,7 @@
   flex-direction: row;
   justify-content: space-between;
   max-width: 1140px;
-  margin-top: 75px;
-  padding: 0 70px;
+  padding: 75px 70px;
 }
 
 .promo__table-left {
@@ -69,11 +68,15 @@
 }
 
 @media screen and (max-width: 1090px) {
+  .promo__container {
+    background-color: #073042;
+  }
+
   .promo__table {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    margin-top: 140px;
+    padding: 75px 44px;
   }
 
   .promo__table-left {
@@ -95,13 +98,19 @@
   }
 
   .promo__button {
-    margin: 92px auto 76px;
+    margin: 92px auto 0;
+    background: #073042;
   }
 }
 
 @media screen and (max-width: 800px) {
+  .promo__table {
+    margin-top: 140px;
+    padding: 0 44px;
+  }
+
   .promo__title {
-    width: 300px;
+    width: calc(100% - 60px);
     font-size: 30px;
     line-height: 38px;
     text-align: center;
@@ -113,6 +122,22 @@
   }
 
   .promo__button {
-    margin: 80px auto 30px;
+    margin: 80px auto 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .promo__logo {
+    width: 206px;
+  }
+
+  .promo__table {
+    margin-top: 0;
+    padding: 70px 10px 30px;
+  }
+
+  .promo__title {
+    width: 100%;
+    font-size: 27px;
   }
 }

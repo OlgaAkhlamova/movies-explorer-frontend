@@ -1,5 +1,5 @@
 .about-project {
-  margin: 110px 70px;
+  padding: 110px 70px;
 }
 
 .about-project__title {
@@ -8,14 +8,17 @@
   font-size: 22px;
   line-height: 26.63px;
   border-bottom: 1px solid black;
-  margin-bottom: 23px;
+  margin: 0;
+  padding-bottom: 23px;
+  text-align: start;
 }
 
 .about-project__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  margin-top: 70px;
 }
 
 .about-project__info {
@@ -93,7 +96,7 @@
 
 @media screen and (max-width: 768px) {
   .about-project {
-    margin: 90px 50px;
+    padding: 90px 50px;
   }
 
   .about-project__info {
@@ -121,7 +124,7 @@
 
 @media screen and (max-width: 540px) {
   .about-project {
-    margin: 70px 18px;
+    padding: 70px 18px;
   }
 
   .about-project__container {
