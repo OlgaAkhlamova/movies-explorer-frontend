@@ -105,8 +105,7 @@
 
 @media screen and (max-width: 800px) {
   .promo__table {
-    margin-top: 140px;
-    padding: 0 44px;
+    padding: 140px 44px 76px;
   }
 
   .promo__title {

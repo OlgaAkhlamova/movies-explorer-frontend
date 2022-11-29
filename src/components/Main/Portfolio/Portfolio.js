@@ -12,6 +12,7 @@ function Portfolio() {
             href="https://olgaakhlamova.github.io/how-to-learn/"
             className="portfolio__link"
             target="_blank"
+            rel='noreferrer'
             >
             Статичный сайт
             </a>
@@ -21,6 +22,7 @@ function Portfolio() {
             href="https://olgaakhlamova.github.io/how-to-learn/"
             className="portfolio__arrow"
             target="_blank"
+            rel='noreferrer'
             >
               &#8599;
             </a>
@@ -32,6 +34,7 @@ function Portfolio() {
             href="https://olgaakhlamova.github.io/russian-travel/"
             className="portfolio__link"
             target="_blank"
+            rel='noreferrer'
             >
               Адаптивный сайт
             </a>
@@ -41,6 +44,7 @@ function Portfolio() {
             href="https://olgaakhlamova.github.io/russian-travel/" 
             className="portfolio__arrow"
             target="_blank"
+            rel='noreferrer'
             >
               &#8599;
             </a>
@@ -52,6 +56,7 @@ function Portfolio() {
             href=" https://best.rest.mesto.nomorepartiesxyz.ru"
             className="portfolio__link"
             target="_blank"
+            rel='noreferrer'
             >
               Одностраничное приложение
             </a>
@@ -61,6 +66,7 @@ function Portfolio() {
             href=" https://best.rest.mesto.nomorepartiesxyz.ru" 
             className="portfolio__arrow"
             target="_blank"
+            rel='noreferrer'
             >&#8599;</a>
           </div>          
         </li>

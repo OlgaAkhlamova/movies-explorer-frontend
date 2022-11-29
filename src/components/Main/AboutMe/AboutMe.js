@@ -22,7 +22,11 @@ function AboutMe() {
             прошла курс по веб-разработке, начала заниматься фриланс-заказами 
             и ушла с постоянной работы.
           </p>
-          <a className="about-me__link" href="https://github.com/OlgaAkhlamova" target="_blanc">
+          <a 
+            className="about-me__link" 
+            href="https://github.com/OlgaAkhlamova" 
+            target="_blanc" 
+            rel='noreferrer'>
             Github
           </a>
         </div>
