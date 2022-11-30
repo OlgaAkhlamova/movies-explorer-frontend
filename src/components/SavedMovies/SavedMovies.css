@@ -1,0 +1,9 @@
+.saved-movies {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.saved-movies__main {
+  padding: 70px 70px 240px;
+}

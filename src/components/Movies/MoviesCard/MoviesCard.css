@@ -1,0 +1,105 @@
+.card {
+  min-width: 270px;
+  min-height: 232px;
+  background: #ffffff;
+}
+
+.card__image {
+  display: block;
+  width: 100%;
+  /* width: 270px;
+  height: 151px; */
+  margin: 0;
+  object-fit: cover;
+  object-position: center;
+  background: #c4c4c4;
+}
+
+.card__like {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  display: inline-block;
+  background: 50% no-repeat;
+  background-size: 100%;
+  border: none;
+  background-image: url(../../../images/savedesactiv.svg);
+  cursor: pointer;
+  opacity: 1;
+}
+
+.card__like:hover {
+  opacity: 0.5;
+}
+
+.card__like_active {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  display: inline-block;
+  background: 50% no-repeat;
+  background-size: 100%;
+  border: none;
+  background-image: url(../../../images/saveactiv.svg);
+  cursor: pointer;
+  opacity: 1;
+}
+
+.card__delete {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  display: inline-block;
+  background: 50% no-repeat;
+  background-size: 100%;
+  border: none;
+  background-image: url(../../../images/savedel.svg);
+  cursor: pointer;
+  opacity: .5;
+}
+
+.card__delete:hover {
+  opacity: 1;
+}
+
+.card__pitch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 14px 0 6px;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.card__title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15.73px;
+  color: #000000;
+  max-width: 226px;
+  margin: 0;
+  /* text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; */
+}
+
+.card__duration {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13.31px;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+/* @media screen and (max-width: 890px) {
+  .card {
+    width: 339px;
+  }
+  .card__image {
+    display: block;
+    width: 339px;
+    height: 190px;
+  }
+} */

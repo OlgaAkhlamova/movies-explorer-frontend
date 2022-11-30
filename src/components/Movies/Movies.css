@@ -1,0 +1,10 @@
+/* .movies {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+} */
+
+.movies__main {
+  margin-top: 48px;
+  padding: 70px 70px 0;
+}
