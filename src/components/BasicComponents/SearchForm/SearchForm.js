@@ -1,6 +1,5 @@
 import React from 'react';
 import './SearchForm.css';
-import checkboxoff from '../../images/smalltumboff.svg';
 
 function SearchForm () {
   return (
@@ -14,10 +13,7 @@ function SearchForm () {
         <button className='form__button'>Найти</button>
       </fieldset>
       <fieldset className='form__short'>
-        <input type='checkbox' name='shortmovie' id='short'>
-          <img className='form__img'
-            src={checkboxoff} />
-        </input>
+        <input type='checkbox' name='shortmovie' id='short' />       
         <label for='short'className='form__label'>Короткометражки</label>
       </fieldset> 
     </form> 

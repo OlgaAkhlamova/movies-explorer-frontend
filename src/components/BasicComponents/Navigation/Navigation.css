@@ -1,0 +1,47 @@
+.menu {
+  display: flex;
+  width: 382px;
+}
+
+.menu__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  padding-right: 20px;
+}
+
+.menu__link_active {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.menu__akkaunt {
+  padding-left: 30px;
+}
+
+.menu__button {
+  width: 100px;
+  height: 32px;
+  background: #F9F9F9;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.menu__button:hover {
+  opacity: .8;
+}
+
+@media screen and (max-width: 780px) {
+  .menu__link {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .menu__link_active {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
