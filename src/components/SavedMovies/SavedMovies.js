@@ -1,9 +1,9 @@
 import React from 'react';
 import './SavedMovies.css';
-import Header from '../Header/Header';
-import SearchForm from '../SearchForm/SearchForm';
-import MoviesCardList from '../MoviesCardList/MoviesCardList';
-import Footer from '../Footer/Footer';
+import Header from '../BasicComponents/Header/Header';
+import SearchForm from '../BasicComponents/SearchForm/SearchForm';
+import MoviesCardList from '../Movies/MoviesCardList/MoviesCardList';
+import Footer from '../BasicComponents/Footer/Footer';
 import Navigation from '../BasicComponents/Navigation/Navigation';
 
 function SavedMovies() {

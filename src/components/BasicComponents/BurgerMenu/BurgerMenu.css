@@ -1,0 +1,86 @@
+.popup {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 0.5);
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  transition: opacity 0.5s linear, visibility 0.5s linear;
+}
+
+.popup__close {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  background: url(../../../images/close-icon22.svg) no-repeat 0 0;
+  position: absolute;
+  top: 29px;
+  right: 29px;
+  cursor: pointer;
+}
+
+.popup__close:hover {
+  opacity: 0.7;
+}
+
+.popup__container {
+  width: 520px;
+  height: 1024px;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.burger-link {
+  width: 240px;
+  margin: 0 auto;
+  padding: 159px 90px 28px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+.burger-link:hover {
+  opacity: .7;
+}
+
+.burger-link_active {
+  text-decoration: underline;
+}
+
+.burger-link:last-child {
+  padding-bottom: 0;
+}
+
+.menu__akkaunt {
+  margin: 0 auto;
+  padding-top: 621px;
+}
+
+.menu__button {
+  width: 60px;
+  height: 16px;
+  background: #F9F9F9;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+}
+
+.menu__button:hover {
+  opacity: .8;
+}

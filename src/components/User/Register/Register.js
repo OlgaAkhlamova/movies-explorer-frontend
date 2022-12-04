@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import {NavLink} from "react-router-dom";
+import {Link} from "react-router-dom";
+import './Register.css';
 import headerLogo from '../../../images/header-logo.svg';
 
 function Register({onRegister}) {
@@ -26,18 +27,20 @@ function Register({onRegister}) {
   
 
   return (
-    <div className="login__container">
-      <img
-        src={headerLogo}
-        alt='белый щит в зеленом круге'
-        className='login__logo'
-      />
-      <h3 className="login__title">Добро пожаловать!</h3>
-      <form className="login__form" onSubmit={handleSubmit}>
-        <fieldset>
-          <label className="login__label" for="name">Имя</label>
+    <div className="reg__container">
+      <Link to='/'>
+        <img
+          src={headerLogo}
+          alt='белый щит в зеленом круге'
+          className='reg__logo'
+        />
+      </Link>
+      <h3 className="reg__title">Добро пожаловать!</h3>
+      <form className="reg__form" onSubmit={handleSubmit}>
+        <fieldset className='reg__fieldset'>
+          <label className="reg__label" for="name">Имя</label>
           <input
-            className="login__input"
+            className="reg__input"
             name="name"
             type="text"
             id="name"
@@ -45,10 +48,10 @@ function Register({onRegister}) {
             onChange={handleChangeName}
             required
           />
-          <span class="login__input-error"></span>
+          <span class="reg__input-error"></span>
           <label className="login__label" for="email">E-mail</label>
           <input
-            className="login__input"
+            className="reg__input"
             name="email"
             type="email"
             id="email"
@@ -56,10 +59,10 @@ function Register({onRegister}) {
             onChange={handleChangeEmail}
             required
           />
-          <span class="login__input-error"></span>
-          <label className="login__label" for="password">Пароль</label>
+          <span class="reg__input-error"></span>
+          <label className="reg__label" for="password">Пароль</label>
           <input
-            className="login__input"
+            className="reg__input"
             name="password"
             type="password"
             id="password"
@@ -67,17 +70,17 @@ function Register({onRegister}) {
             onChange={handleChangePassword}
             required
           />
-          <span class="login__input-error"></span>
+          <span class="reg__input-error"></span>
         </fieldset>
         <button
-          className="login__submit"
+          className="reg__submit"
           type="submit">
             Зарегистрироваться
         </button>
       </form>
-      <div className="login__signup">
-        <p className="signup__ask">Уже зарегистрированы? </p>
-        <NavLink className="signup__link" to="/signin">Войти</NavLink>
+      <div className="reg__signup">
+        <p className="reg__ask">Уже зарегистрированы? </p>
+        <Link className="reg__link" to="/signin">Войти</Link>
       </div>       
     </div>
   );

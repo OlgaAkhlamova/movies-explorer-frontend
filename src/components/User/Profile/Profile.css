@@ -2,3 +2,43 @@
   margin: 0 auto;
   padding: 74px 0 70px;
 }
+
+.profile__title {
+  width: 410px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+}
+
+.profile__form {}
+
+.form__row {}
+
+.login__label {}
+
+.login__input {}
+
+.login__input-error {}
+
+.profile__button {
+  width: 410px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #FF3055;
+}
+
+.profile__link {
+  width: 410px;
+  padding-top: 16px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}

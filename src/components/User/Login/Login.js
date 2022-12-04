@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import {NavLink} from "react-router-dom";
+import {Link,NavLink} from "react-router-dom";
+import './Login.css';
 import headerLogo from '../../../images/header-logo.svg';
 
 function Login({onLogin}) {
@@ -25,14 +26,16 @@ function Login({onLogin}) {
 
   return (
     <div className="login__container">
-      <img
-        src={headerLogo}
-        alt='белый щит в зеленом круге'
-        className='login__logo'
-      />
+      <Link to='/'>
+        <img
+          src={headerLogo}
+          alt='белый щит в зеленом круге'
+          className='login__logo'
+        />
+      </Link>
       <h3 className="login__title">Рады видеть!</h3>
       <form className="login__form" onSubmit={handleSubmit}>
-        <fieldset>
+        <fieldset className='login__fieldset'>
           <label className="login__label" for="email">E-mail</label>
           <input
             className="login__input"

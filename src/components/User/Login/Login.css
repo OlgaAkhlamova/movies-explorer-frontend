@@ -1,4 +1,8 @@
 .login__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 396px;
   padding: 70px 0;
   margin: 0 auto;
 }
@@ -10,10 +14,9 @@
 }
 
 .login__title {
-  width: 396px;
-  height: 29px;
   margin: 0;
   padding-bottom: 40px;
+  text-align: start;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -22,7 +25,12 @@
   color: #000000;
 }
 
-.login__form {}
+.login__fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-align: left;
+}
 
 .login__label {
   font-family: 'Inter';
@@ -31,13 +39,12 @@
   font-size: 10px;
   line-height: 12px;
   color: #A0A0A0;
-  text-align: start;
 }
 
 .login__input {
   width: 396px;
   height: 46px;
-  padding-bottom: 10px;
+  margin: 10px 0 20px;
   background: #F9F9F9;
   border-radius: 8px;
   border: none;
@@ -62,9 +69,10 @@
 .login__submit {
   width: 396px;
   height: 45px;
-  padding: 159px 0 16px;
+  margin: 159px 0 16px;
   background: #3456F3;
   border-radius: 3px;
+  border: none;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -72,17 +80,19 @@
   line-height: 17px;
   text-align: center;
   color: #FFFFFF;
+  cursor: pointer;
+}
+
+.login__submit:hover {
+  opacity: .8;
 }
 
 .login__signup {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto;
 }
 
 .signup__ask {
-  width: 190px;
-  height: 17px;
   margin: 0;
   padding-right: 6px;
   font-family: 'Inter';
@@ -95,8 +105,6 @@
 }
 
 .signup__link {
-  width: 89px;
-  height: 17px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -104,8 +112,47 @@
   line-height: 17px;
   text-align: center;
   color: #3456F3;
+  text-decoration: none;
 }
 
 .signup__link:hover {
   opacity: .7;
+}
+
+@media screen and (max-width: 800px) {
+  .login__container {
+    padding: 232px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .login__container {
+    width: 260px;
+    padding: 56px 0 30px;
+    align-items: center;
+  }
+
+  .login__input {
+    width: 260px;
+  }
+
+  .login__submit {
+    width: 260px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .signup__ask {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .signup__link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
 }

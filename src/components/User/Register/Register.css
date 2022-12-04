@@ -1,19 +1,22 @@
-.login__container {
+.reg__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 396px;
   padding: 70px 0;
   margin: 0 auto;
 }
 
-.login__logo {
+.reg__logo {
   width: 38px;
   height: 38px;
   padding-bottom: 40px;
 }
 
-.login__title {
-  width: 396px;
-  height: 29px;
+.reg__title {
   margin: 0;
   padding-bottom: 40px;
+  text-align: start;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -22,32 +25,36 @@
   color: #000000;
 }
 
-.login__form {}
+.reg__fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-align: left;
+}
 
-.login__label {
+.reg__label {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
   line-height: 12px;
   color: #A0A0A0;
-  text-align: start;
 }
 
-.login__input {
+.reg__input {
   width: 396px;
   height: 46px;
-  padding-bottom: 10px;
+  margin: 10px 0 20px;
   background: #F9F9F9;
   border-radius: 8px;
   border: none;
 }
 
-.login__input:last-child {
+.reg__input:last-child {
   padding-bottom: 0;
 }
 
-.login__input-error {
+.reg__input-error {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -59,12 +66,13 @@
   min-height: 12px;
 }
 
-.login__submit {
+.reg__submit {
   width: 396px;
   height: 45px;
-  padding: 69px 0 16px;
+  margin: 69px 0 16px;
   background: #3456F3;
   border-radius: 3px;
+  border: none;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -72,17 +80,19 @@
   line-height: 17px;
   text-align: center;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
-.login__signup {
+.reg__submit:hover {
+  opacity: .8;
+}
+
+.reg__signup {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto;
 }
 
-.signup__ask {
-  width: 190px;
-  height: 17px;
+.reg__ask {
   margin: 0;
   padding-right: 6px;
   font-family: 'Inter';
@@ -94,9 +104,7 @@
   color: #A0A0A0;
 }
 
-.signup__link {
-  width: 89px;
-  height: 17px;
+.reg__link {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -104,8 +112,47 @@
   line-height: 17px;
   text-align: center;
   color: #3456F3;
+  text-decoration: none;
 }
 
-.signup__link:hover {
+.reg__link:hover {
   opacity: .7;
+}
+
+@media screen and (max-width: 800px) {
+  .reg__container {
+    padding: 232px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .reg__container {
+    width: 260px;
+    padding: 56px 0 30px;
+    align-items: center;
+  }
+
+  .reg__input {
+    width: 260px;
+  }
+
+  .reg__submit {
+    width: 260px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .reg__ask {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .reg__link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
 }
